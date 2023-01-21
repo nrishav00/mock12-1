@@ -5,6 +5,7 @@ const growUserModel = require("./Models/User.model");
 const { tokenCheck } = require("./Middlewares/Auth.middleware");
 env.config();
 const bcrypt=require("bcrypt");
+const jwt=require("jsonwebtoken");
 const cors=require("cors");
 const app=express();
 const port=process.env.PORT || 6000;
